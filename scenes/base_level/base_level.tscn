@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdv7ik5n5pf1k"]
+
+[ext_resource type="PackedScene" uid="uid://sdydgqy0kous" path="res://scenes/player/player.tscn" id="2_f4lov"]
+[ext_resource type="PackedScene" uid="uid://djnebfyxeaxsf" path="res://scenes/chest/chest.tscn" id="4_c3fsx"]
+
+[node name="BaseLevel" type="Node2D"]
+
+[node name="Chest" parent="." instance=ExtResource("4_c3fsx")]
+unique_name_in_owner = true
+position = Vector2(10, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_f4lov")]
+unique_name_in_owner = true
+
+[node name="CoinsStorage" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-10, 0)
