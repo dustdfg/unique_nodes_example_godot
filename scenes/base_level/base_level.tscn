@@ -5,13 +5,13 @@
 
 [node name="BaseLevel" type="Node2D"]
 
-[node name="Chest" parent="." instance=ExtResource("4_c3fsx")]
-unique_name_in_owner = true
-position = Vector2(10, 0)
-
 [node name="Player" parent="." instance=ExtResource("2_f4lov")]
 unique_name_in_owner = true
 
 [node name="CoinsStorage" type="Node2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(-10, 0)
+
+[node name="Chest" parent="." instance=ExtResource("4_c3fsx")]
+unique_name_in_owner = true
+position = Vector2(10, 0)
